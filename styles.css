@@ -1,0 +1,126 @@
+/*AJUSTES DE PAGINA*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(img/paven.png);
+}
+header{
+    min-width: 1024px;
+    margin: 0px auto;
+    height: 250px;
+    width: 100%;
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+/*FIN AJUSTES DE PAGINA*/
+
+/*LOGO*/
+header #logotipo{
+    width: 200px;
+    margin: auto;
+    
+}
+
+#header> h1> a{
+    text-decoration: none;
+    color: rgb(27, 27, 27);
+
+}
+
+#header h1{
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 0px 0px 2px;
+}
+/*FIN DE LOGO*/
+
+/* ENCABEZADO*/
+article #nav{
+    background-color: black;
+    height: 40px;
+    width: 100%;
+}
+#nav > ul{
+    width:1130px ;
+    margin: 0px auto;
+}
+
+article #nav  ul li{
+    display: block;
+    float: right;
+    text-shadow: 0px 0px 1px ghostwhite; 
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 170ms;;
+    height: 40px;
+    width:100px ;
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height: 13px;
+} 
+
+article #nav  ul li:first-child{
+    margin-right: 10px;
+}
+article> #nav>  ul> li> a{
+  
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-top:10px;
+    margin-bottom:5px;
+    transition: all 170ms;
+}
+
+#nav> ul> li:hover{
+   text-decoration: underline;
+   background-color: #01111E;
+    }
+
+/* SUB LISTA*/
+article> #nav> ul> li> ul{
+position: absolute;
+display:none ;
+text-align: center;
+width: 200px;
+z-index: 1;
+font-family: Arial, Helvetica, sans-serif;
+border: none;
+transition: all 170ms;
+}
+#nav> ul > li:hover > ul{
+    display: block;
+}
+#nav> ul > li:hover > ul >li{
+    float:left;
+    display: inline-block;
+    background-color: #C7C7C7;
+    padding: 2px;
+    border: none;
+    line-height:30px;
+    font-size: 15px; 
+    margin: 0px auto;
+    margin-bottom: 1px;
+    text-align:center;
+    width: 95%;
+}
+
+#nav> ul > li:hover > ul >li:last-child {
+    margin-bottom: 5px;
+}
+
+#nav > ul > li:hover > ul > li> a{
+    color: black;
+    text-decoration: none;
+   }
+
+   #nav > ul > li:hover > ul > li:hover{
+   color:rgb(240, 239, 239);
+   box-shadow: 0px -2px 1px #002138 inset;
+   }
+
+/* FIN DE ENCABEZADO*/
